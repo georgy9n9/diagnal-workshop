@@ -1,6 +1,7 @@
 Instructions
 
-1. Decompress the file diagnalproject.zip
+Download as zip
+1. Decompress the file diagnal-workshop-main.zip
 
 Frontend setup
 1. Open the zip and open in terminal
