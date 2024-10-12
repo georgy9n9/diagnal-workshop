@@ -45,6 +45,10 @@ body {
   align-items: center;
   justify-content: space-between; /* Space between back button, title, and search */
   height: 64px; /* Set a fixed height */
+
+  background-image: url('https://test.create.diagnal.com/images/nav_bar.png'); /* Use your image here */
+  background-size: cover; /* Ensure the image covers the entire header */
+  background-position: center;
 }
 
 .back-icon {
