@@ -1,0 +1,142 @@
+/* App.css */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap");
+
+/* Disable scroll on the body */
+html, body {
+  /* height: 100%; */
+  padding: 0 ;
+  margin: 0;
+  overflow: hidden; /* Disable page-level scrolling */
+}
+
+
+body {
+  margin: 0;
+  font-family: "Titillium Web", sans-serif;
+  background-color: #171717; /* Background color */
+  color: #ffffff; /* Text color */
+}
+
+/* Movie Grid Container */
+.movie-grid {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: calc(100vh - 80px); /* Adjust for header height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+}
+
+.movie-grid::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, Opera */
+}
+
+/* Header Styles */
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #171717;
+  z-index: 10; /* Ensure it's above other elements */
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between back button, title, and search */
+  height: 64px; /* Set a fixed height */
+}
+
+.back-icon {
+  width: 24px; /* Set the width for the back icon */
+  height: 24px; /* Set the height for the back icon */
+  cursor: pointer; /* Change cursor to pointer */
+  margin-right: 8px; /* Add a small space after the back icon */
+}
+
+.title {
+  margin: 0; /* Remove default margin */
+  font-size: 24px; /* Font size for title */
+  flex-grow: 1; /* Allow the title to take available space */
+  text-align: left; /* Align text to the left */
+}
+
+/* Search Input Styles */
+.search-input-container {
+  display: flex;
+  justify-content: flex-end; /* Align input to the right */
+  margin-top: 8px; /* Add some space above the input */
+}
+
+/* Search Container */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align search icon to the right */
+}
+
+/* Magnifier Icon */
+.search-icon {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+/* Search Input Field (Visible on click) */
+.search-input {
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+/* Grid Container Styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 0px; /* Gap between grid items */
+}
+
+/* Movie Card Styles */
+
+.no-data {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100px; /* Set a fixed height to keep it centered */
+  font-size: 18px; /* Font size for the message */
+  color: #ffffff; /* Text color */
+  text-align: center; /* Center text */
+}
+
+.movie-card {
+  border-radius: 8px; /* Rounded corners for the card */
+  overflow: hidden; /* Ensure no overflow */
+  padding: 8px; /* Padding around the content */
+  text-align: left; /* Ensure text is left-aligned */
+}
+
+/* Movie Poster Image */
+.movie-poster {
+  width: 100%; /* Full width for the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for the image */
+}
+
+/* Movie Title */
+.movie-title {
+  margin-top: 8px; /* Space between the image and title */
+  font-size: 16px; /* Font size for the title */
+  color: #ffffff; /* White text color */
+  text-align: left; /* Align text to the left */
+  word-wrap: break-word; /* Break long words */
+}
